@@ -9,9 +9,63 @@ body {
     height: 100vh;
 }
 
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url("../fonts/Norse-Bold.otf");
+}
+
 .logoContainer {
     width: 25%;
     background-color: blue;
+    background-image: url("../images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logoContainer > .logoOverlay {
+    background-color: rgba(0,0,0,0.5);
+    height: 150px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.logoOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoOverlay > .logo {
+    max-height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+
+.logoOverlay > .logoText {
+    font-size: 80px;
+    color: white;
+    font-family: 'Norse-Bold';
+    text-align: center;
+}
+
+.logoContainer > .imgCredit {
+    margin-top: auto;
+    margin-bottom: 12px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.logoContainer > .imgCredit a:visited,
+.logoContainer > .imgCredit a
+ {
+    color: white;
 }
 
 .formContainer {
