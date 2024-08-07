@@ -90,3 +90,15 @@ body {
 .formContainer > section:nth-child(even) {
     background-color: white;
 }
+
+.signUpHeaderContainer {
+    display: flex;
+}
+
+.signUpHeader {
+    margin: auto 36px 36px 36px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 600px;
+}
