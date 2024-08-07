@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.logoContainer {
+    width: 25%;
+    background-color: blue;
+}
+
+.formContainer {
+    width: 75%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer > section {
+    height: 33vh;
+}
+
+.formContainer > section:last-child {
+    height: 34vh;
+}
+
+.formContainer > section:nth-child(odd) {
+    background-color: #f9fafc;
+}
+
+.formContainer > section:nth-child(even) {
+    background-color: white;
+}
