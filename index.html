@@ -31,7 +31,7 @@
                 Let's do this!
             </h1>
             <div class="mainForm">
-                <form>
+                <form id="AccountCreationForm">
                     <div class="form-row">
                         <div class="labelInput">
                             <label for="FirstName">First name (*)</label>
@@ -66,7 +66,12 @@
                 </form>
             </div>
         </section>
-        <section></section>
+        <section>
+            <div class="createAccountContainer">
+                <input type="submit" form="AccountCreationForm" value="Create Account" class="createAccountBtn">
+                <p class="loginTxt">Already have an account? <a class="loginLink" href="">Log in</a></p>
+            </div>
+        </section>
     </div>
 </body>
 <script src="js/index.js" type="text/javascript"></script>
