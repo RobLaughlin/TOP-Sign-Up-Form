@@ -7,12 +7,16 @@ function pwdFieldChanged(e) {
     if (match) {
         pwdErrText.classList.add("invisible");
         pwdText.setCustomValidity("");
+        pwdText.classList.remove("pwdMisMatch");
         confirmPwdText.setCustomValidity("");
+        confirmPwdText.classList.remove("pwdMisMatch");
     }
     else {
         pwdErrText.classList.remove("invisible");
         pwdText.setCustomValidity("Passwords must match.");
+        pwdText.classList.add("pwdMisMatch");
         confirmPwdText.setCustomValidity("Passwords must match.");
+        confirmPwdText.classList.add("pwdMisMatch");
     }
 }
 

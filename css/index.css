@@ -163,3 +163,7 @@ input:focus {
 .invisible {
     visibility: hidden;
 }
+
+.pwdMisMatch {
+    border: 1px solid red !important;
+}
